@@ -1,0 +1,5 @@
+python3 -m timeit -n 50 -s 'pass' 'pass'
+
+from pastry.routing import LeafSet; from os import urandom; ls = LeafSet(urandom(16)); large_dict = {urandom(16): (urandom(16), urandom(2)) for _ in range (10000)}
+
+ls.update(large_dict)
